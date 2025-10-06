@@ -1,0 +1,11 @@
+cat > .dockerignore <<'IGN'
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+.git/
+.gitignore
+Dockerfile~
+IGN
