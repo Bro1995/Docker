@@ -1,0 +1,9 @@
+cat > docker-compose.yml <<'YML'
+version: "3.9"
+services:
+  web:
+    build: .
+    ports:
+      - "8080:5000"   # host:container (visit http://<server-ip>:8080)
+    restart: unless-stopped
+YML
